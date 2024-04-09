@@ -1,0 +1,37 @@
+where 
+xs,ys=>Start points
+xe,ye=>End points
+
+ 
+ glBegin(GL_LINES);
+ {
+     glVertex2d(xs, ys);            //original line
+     glVertex2d(xe, ye);
+ }glEnd();                   
+
+
+ // Calculate the direction vector of the original line
+ float dx = xe - xs;
+ float dy = ye - ys;
+
+
+
+ float offset = -0.2;     //Distance between the Original line and New Line(Parallel Line)
+
+where 
+xs1,ys1=>Start points
+xe1,ye1=>End points
+
+
+ // Calculate the point on the parallel line
+ float xs1 = xs + offset * (dy);
+ float ys1 = ys - offset * dx;
+ float xe1 = xe + offset * (dy);
+ float ye1 = ye - offset * dx;
+
+
+ glBegin(GL_LINES);
+ {
+     glVertex2d(xs1, ys1);            //New Parallel line
+     glVertex2d(xe1, ye1);
+ }glEnd(); 
