@@ -1,0 +1,10 @@
+ float k = 0.7;  
+ float us = xs + (xe - xs) * k;
+ float vs = ys + (ye - ys) * k;
+
+where 
+xs,ys=start coordinate
+xe,ye=end coordinate
+
+k = is the factor which used to find any point of the line which varies from 0.0 to 1
+
