@@ -1,1 +1,1 @@
-It is the code to draw a parallel line in opengl which works in all xy co-ordinates
+This repo contains some opengl basic logics which helps to draw symbols on the transparent window if any queries contact my email:dineshkarthick9988@gmail.com
